@@ -65,7 +65,9 @@ else()
 endif()
 target_link_libraries(wxFormBuilder_sdk_plugin-interface
   PUBLIC
+    wxFormBuilder::sdk_common
     ticpp::ticpp
+    tinyxml2::tinyxml2
 )
 
 set_target_properties(wxFormBuilder_sdk_plugin-interface PROPERTIES FOLDER "Sdk")
